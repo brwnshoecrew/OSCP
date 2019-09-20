@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -n "for [var] in \$(seq [beg] [end]); do [cmd] \$[var]; done"
+echo
+echo -n "for [var] in \$(seq [beg] [end]); do [cmd] \$[var]; done" | clip
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+IP=$1
+BOX=$2
+echo "Executing AutoRecon on $IP."
+mkdir /root/Boxes/$2
+cp -r /root/Ops/Tools/AutoRecon /root/Boxes/$2
+cd /root/Boxes/$2/AutoRecon
+python3 autorecon.py $1
