@@ -1,3 +1,7 @@
 #!/bin/bash
-IP_Range=$( hostname -I | cut -d . -f 1-3 )
-nmap -sP -n -sn $IP_Range".1/24"
+HOST=$( hostname -I )
+HOST_NO_WHITE="$(echo -e "${HOST}" | tr -d '[:space:]')"
+IP_RANGE=$( hostname -I | cut -d . -f 1-3 )
+SERVER_ADDR=$( hostname -I | cut -d . -f 1-3 )".100"
+SERVER_ADDR_NO_WHITE="$(echo -e "${SERVER_ADDR}" | tr -d '[:space:]')"
+nmap -sP -n -sn $IP_RANGE".1/24" --exclude $HOST_NO_WHITE","$SERVER_ADDR_NO_WHITE | sed '/^Host/d' | sed '/^MAC/d' | sed '/seconds$/d' | sed '/^Starting/d' | cut -d " " -f 5
