@@ -1,0 +1,20 @@
+#!/bin/bash
+clear
+echo -e "\e[1;36mKali Linux Update Script\e[0m"
+if ping -c 1 -W 20 8.8.8.8 1> /dev/null 2> /dev/null
+then
+	echo "Internet Up!"
+
+	echo -e "\e[1;36m[+] Updating Kali. Please wait.\e[0m"
+	apt-get update -y > /dev/null && apt-get upgrade -y > /dev/null && apt-get dist-upgrade -y > /dev/null
+	echo -e "Kali is now up to date.\n"
+
+	echo -e "\e[1;36m[+] Cleaning Kali. Please wait.\e[0m"
+
+	apt-get autoclean -y > /dev/null && apt-get clean -y > /dev/null
+	echo -e "\e[1;36m[+] Kali is now clean and updated."
+else
+	echo "Internet Down...Exiting"
+fi
+touch /tmp/test.txt
+exit

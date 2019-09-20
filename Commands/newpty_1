@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -n "python -c 'import pty;pty.spawn(\"/bin/bash\")';" | clip;

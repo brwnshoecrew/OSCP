@@ -1,0 +1,10 @@
+#!/bin/bash
+TERM_Type=$( echo -n $TERM )
+Rows=$( stty -a | awk '/rows/' | cut -d " " -f5 )
+Cols=$( stty -a | awk '/rows/' | cut -d " " -f7 )
+
+echo "export SHELL=bash; export TERM=$TERM_Type; stty rows ${Rows//;} columns ${Cols//;}";
+
+echo "export SHELL=bash; export TERM=$TERM_Type; stty rows ${Rows//;} columns ${Cols//;}" | clip
+
+stty raw -echo;

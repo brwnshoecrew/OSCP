@@ -1,0 +1,3 @@
+#!/bin/bash
+IP_Range=$( hostname -I | cut -d . -f 1-3 )
+nmap -sP -n -sn $IP_Range".1/24"
