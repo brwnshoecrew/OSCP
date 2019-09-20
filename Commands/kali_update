@@ -1,20 +1,26 @@
 #!/bin/bash
+source /root/Ops/Commands/colors.sh
 clear
-echo -e "\e[1;36mKali Linux Update Script\e[0m"
+echo -e "${BLUE}Kali Linux Update Script\n"
 if ping -c 1 -W 20 8.8.8.8 1> /dev/null 2> /dev/null
 then
-	echo "Internet Up!"
+	echo -e "${GREEN}Internet Up!\n"
 
-	echo -e "\e[1;36m[+] Updating Kali. Please wait.\e[0m"
+	echo -e "${YELLOW}[+] Updating Kali. Please wait."
 	apt-get update -y > /dev/null && apt-get upgrade -y > /dev/null && apt-get dist-upgrade -y > /dev/null
-	echo -e "Kali is now up to date.\n"
+	echo -e "${GREEN}Kali is now up to date.\n"
 
-	echo -e "\e[1;36m[+] Cleaning Kali. Please wait.\e[0m"
-
+	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
 	apt-get autoclean -y > /dev/null && apt-get clean -y > /dev/null
-	echo -e "\e[1;36m[+] Kali is now clean and updated."
+	echo -e "${GREEN}Kali is now clean and updated.\n"
+
+	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
+	cd /root/Ops/AutoRecon
+	git pull
+	echo -e "${GREEN}AutoRecon Updated.\n"
+
+	echo -e "${BLUE}Exiting.\n"
 else
-	echo "Internet Down...Exiting"
+	echo -e "${RED}Internet Down...Exiting"
 fi
-touch /tmp/test.txt
 exit
