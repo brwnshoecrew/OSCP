@@ -3,9 +3,13 @@ import http.server
 import socketserver
 import sys
 
-PORT = sys.argv[1]
-Handler = http.server.SimpleHTTPRequestHandler
+if len(sys.argv) - 1 == 1:
+    PORT = sys.argv[1]
+    Handler = http.server.SimpleHTTPRequestHandler
 
-with socketserver.TCPServer(("", int(PORT)), Handler) as httpd:
-    print("serving at port", int(PORT))
-    httpd.serve_forever()
+    with socketserver.TCPServer(("", int(PORT)), Handler) as httpd:
+        print("Serving HTTP at port", int(PORT))
+        httpd.serve_forever()
+else:
+    print("Usage: pyserver [port]. Exactly 1 command line argument required.")
+

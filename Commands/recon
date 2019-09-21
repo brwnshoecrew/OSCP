@@ -1,8 +1,13 @@
 #!/bin/bash
 IP=$1
 BOX=$2
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: recon [IP] [Box Name]. You must enter 2 command line arguments."
+    exit
+fi
+
 echo "Executing AutoRecon on $IP."
-mkdir /root/Boxes/$2
-cp -r /root/Ops/Tools/AutoRecon /root/Boxes/$2
-cd /root/Boxes/$2/AutoRecon
-python3 autorecon.py $1
+mkdir -p /root/Boxes/$2/AutoRecon
+python3 /media/sf_Kali_Shared_Folder/Ops/Tools/AutoRecon/autorecon.py $1 -o /root/Boxes/$2/AutoRecon
+
