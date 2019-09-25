@@ -44,7 +44,6 @@ for Login_Combo in up_file:
     File_Password = fields[1]   
 
     #Define the login array that holds the HTTP POST request parameters and values that need to be passed in a valid login attempt.
-    #////THIS SECTION NEEDS TO BE UPDATED MANUALLY AFTER OBSERVING WHAT VALUES ARE BEING PASSED IN AN AUTHETNICATION ATTEMPT.////
     login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]} 
     #Initiate an HTTP POST request to the defined URL login page while ignoring any SSL errors / warnings using the parameter values defined in the login variable.
     r = s.post(args.URL_var, data=login_parameter_values, verify=False) 
