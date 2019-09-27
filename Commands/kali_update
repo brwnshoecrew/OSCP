@@ -1,23 +1,34 @@
 #!/bin/bash
 source /root/Ops/Commands/colors.sh
 clear
+# progress bar function
 echo -e "${BLUE}Kali Linux Update Script\n"
 if ping -c 1 -W 20 8.8.8.8 1> /dev/null 2> /dev/null
 then
 	echo -e "${GREEN}Internet Up!\n"
 
 	echo -e "${YELLOW}[+] Updating Kali. Please wait."
-	apt-get update -y > /dev/null && apt-get upgrade -y > /dev/null && apt-get dist-upgrade -y > /dev/null
+	apt-get update -y -v > /dev/null && apt-get upgrade -y -v > /dev/null && apt-get dist-upgrade -y -v > /dev/null
 	echo -e "${GREEN}Kali is now up to date.\n"
 
 	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
-	apt-get autoclean -y > /dev/null && apt-get clean -y > /dev/null
+	apt-get autoclean -y -v > /dev/null && apt-get clean -y -v > /dev/null
 	echo -e "${GREEN}Kali is now clean and updated.\n"
 
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
-	cd /root/Ops/AutoRecon
+	cd /root/Ops/Tools/AutoRecon
 	git pull
 	echo -e "${GREEN}AutoRecon Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
+	cd /root/Ops/Tools/LinEnum
+	git pull
+	echo -e "${GREEN}LinEnum Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating Linux-Smart-Enumeration. Please wait."
+	cd /root/Ops/Tools/linux-smart-enumeration
+	git pull
+	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
 
 	echo -e "${BLUE}Exiting.\n"
 else
