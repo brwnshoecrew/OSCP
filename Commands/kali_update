@@ -15,6 +15,16 @@ then
 	apt-get autoclean -y -v > /dev/null && apt-get clean -y -v > /dev/null
 	echo -e "${GREEN}Kali is now clean and updated.\n"
 
+	echo -e "${YELLOW}[+] Clearing Local Ops Git. Please wait."
+	cd /root
+	rm -rf Ops
+	echo -e "${GREEN}Local Ops Git Cleared.\n"	
+	
+	echo -e "${YELLOW}[+] Creating New Local Ops. Please wait."
+	cd /root
+	git clone https://github.com/neogeo56/Ops.git
+	echo -e "${GREEN}New Local Ops Created.\n"
+	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
 	cd /root/Ops/Tools/AutoRecon
 	git pull
