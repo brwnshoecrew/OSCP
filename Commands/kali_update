@@ -27,18 +27,24 @@ then
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
-	cd /root/Ops/Tools/AutoRecon
-	git pull
+	cd /root/Ops/Tools
+	rm -rf AutoRecon
+	git clone https://github.com/Tib3rius/AutoRecon.git
+	chmod 755 AutoRecon -R
 	echo -e "${GREEN}AutoRecon Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
-	cd /root/Ops/Tools/LinEnum
-	git pull
+	cd /root/Ops/Tools
+	rm -rf LinEnum
+	git clone https://github.com/rebootuser/LinEnum.git
+	chmod 755 LinEnum -R
 	echo -e "${GREEN}LinEnum Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating Linux-Smart-Enumeration. Please wait."
-	cd /root/Ops/Tools/linux-smart-enumeration
-	git pull
+	cd /root/Ops/Tools
+	rm -rf linux-smart-enumeration
+	git clone https://github.com/diego-treitos/linux-smart-enumeration.git
+	chmod 755 linux-smart-enumeration -R
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
 
 	echo -e "${BLUE}Exiting.\n"
