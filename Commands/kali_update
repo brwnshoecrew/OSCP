@@ -36,6 +36,7 @@ then
 	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
 	cd /root/Ops/Tools
 	rm -rf LinEnum
+	cd /root/Post_Exploit
 	git clone https://github.com/rebootuser/LinEnum.git
 	chmod 755 LinEnum -R
 	echo -e "${GREEN}LinEnum Updated.\n"
@@ -43,9 +44,16 @@ then
 	echo -e "${YELLOW}[+] Updating Linux-Smart-Enumeration. Please wait."
 	cd /root/Ops/Tools
 	rm -rf linux-smart-enumeration
+	cd /root/Post_Exploit
 	git clone https://github.com/diego-treitos/linux-smart-enumeration.git
 	chmod 755 linux-smart-enumeration -R
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating Spose. Please wait."
+	cd /root/Ops/Tools
+	git clone https://github.com/aancw/spose.git
+	chmod 755 spose -R
+	echo -e "${GREEN}Spose Updated.\n"
 
 	echo -e "${BLUE}Exiting.\n"
 else
