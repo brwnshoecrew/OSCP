@@ -47,25 +47,22 @@ for Login_Combo in up_file:
     File_Password = fields[1]   
 
     if args.session_id_var != None:
-	if args.token_name_var != None:
-		csrf_response = requests.get(args.URL_var)
-    		soup = BeautifulSoup(csrf_response.content, 'html.parser')
-    		#Parse the HTML output from the request to find the value of the csrf_token to be used in the login process.
-    		for result in soup.find_all(attrs={"name":args.token_name_var}):
-        		token = result.get('value')
-    		#Parse the headers of the response to identify the PHP session ID value and assign it to the csrf_cookie variable.
-    		auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
-		#Define the login array that holds the HTTP POST request parameters and values that need to be passed in a valid login attempt.  This includes the CSRF token assigned to the paramter passed in the CLI.
-    		login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1], args.token_name_var: token} 
-    		#Initiate an HTTP POST request to the defined URL login page while ignoring any SSL errors / warnings using the parameter values defined in the login variable.  This includes the PHP session ID in the header.
-    		r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
-	else:
-		auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
-		#Define the login array that holds the HTTP POST request parameters and values that need to be passed in a valid login attempt.  This includes the CSRF token assigned to the paramter passed in the CLI.
-    		login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]} 
-    		#Initiate an HTTP POST request to the defined URL login page while ignoring any SSL errors / warnings using the parameter values defined in the login variable.  This includes the PHP session ID in the header.
-    		r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
-	
+        if args.token_name_var != None:
+            csrf_response = requests.get(args.URL_var)
+            soup = BeautifulSoup(csrf_response.content, 'html.parser')
+            for result in soup.find_all(attrs={"name":args.token_name_var}):
+                token = result.get('value')
+            auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
+            login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1], args.token_name_var: token}
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
+        else:
+            auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
+            login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]}
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
+    else:
+            login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]}
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False)
+    
     #After making the POST request with a username and password combination, scrap the HTTP response packet to identify if the keyword for failed logins is present or not.
     if args.keyword_var in r.text: 
        	#If the failed login attempt keyword is found in the HTTP response then print the failed login attempt username and password.
