@@ -1,0 +1,19 @@
+#!/bin/bash
+
+host=$( hostname -I )
+col=$( echo $host | awk '{print NF}')
+
+while [[ $col -ge 1 ]]
+do
+	result=$( echo $host | awk -F ' ' '{print $'"$col"' }' )
+	if [[ $result == *"10.10.14"* ]]; then
+		echo $result
+		found="yes"
+	fi
+	((col = col - 1))
+done
+
+if [[ $found != "yes" ]]; then
+	result=$( echo $host | awk -F ' ' '{print $1}')
+	echo $result
+fi
