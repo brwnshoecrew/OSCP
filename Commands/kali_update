@@ -26,6 +26,12 @@ then
 	chmod 755 Ops -R
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
+	echo -e "${YELLOW}[+] Moving TMUX Config File. Please wait."
+	cd /root
+	cp /root/Ops/Tools/.tmux.conf .
+	chmod 755 /root/.tmux.conf
+	echo -e "${GREEN}TMUX Config File Moved.\n"
+	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
 	cd /root/Ops/Tools
 	rm -rf AutoRecon
