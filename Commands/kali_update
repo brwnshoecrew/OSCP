@@ -71,6 +71,8 @@ then
 	cd /root/Ops/Tools
 	wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
 	chmod 755 Sherlock.ps1
+	echo "" >> Sherlock.ps1
+	echo "Find-AllVulns" >> Sherlock.ps1
 	echo -e "${GREEN}Sherlock Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating Nishang Powershell TCP. Please wait."
