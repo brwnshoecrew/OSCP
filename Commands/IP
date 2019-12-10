@@ -1,3 +1,18 @@
 #!/bin/bash
-hostname -I | cut -d " " -f 1
-hostname -I | cut -d " " -f 1 | clip;
+
+host=$( hostname -I )
+col=$( echo $host | awk '{print NF}')
+
+while [[ $col -ge 1 ]]
+do
+	result=$( echo $host | awk -F ' ' '{print $'"$col"' }' )
+	if [[ $result == *"10.10.14"* ]]; then
+		echo $result
+		found="yes"
+	fi
+	((col = col - 1))
+done
+
+if [[ $found != "yes" ]]; then
+	echo $host | awk -F ' ' '{print $1}'
+fi
