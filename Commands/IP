@@ -9,6 +9,7 @@ do
 	if [[ $result == *"10.10.14"* ]]; then
 		echo $result
 		found="yes"
+		echo -n $result | clip;
 	fi
 	((col = col - 1))
 done
