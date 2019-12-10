@@ -15,5 +15,7 @@ do
 done
 
 if [[ $found != "yes" ]]; then
-	echo $host | awk -F ' ' '{print $1}'
+	result=$( echo $host | awk -F ' ' '{print $1}')
+	echo $result
+	echo -n $result | clip;
 fi
