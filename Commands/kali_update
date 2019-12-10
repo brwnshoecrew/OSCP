@@ -79,12 +79,6 @@ then
 	chmod 755 Invoke-PowerShellTcp.ps1
 	echo -e "${GREEN}Nishang Powershell TCP Updated.\n"
 
-	echo -e "${YELLOW}[+] Updating Impacket SMB Server. Please wait."
-	cd /root/Ops/Tools
-	wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbserver.py
-	chmod 755 smbserver.py
-	echo -e "${GREEN}Impacket SMB Server Updated.\n"
-	
 	echo -e "${BLUE}Exiting.\n"
 else
 	echo -e "${RED}Internet Down...Exiting"
