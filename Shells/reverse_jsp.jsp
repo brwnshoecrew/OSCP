@@ -1,8 +1,9 @@
 <%--
-I've tried a few different JSP reverse shells including MSFVenoms and they all don't seem to work.
+I've tried a few different JSP reverse shells and they all don't seem to work.
 This one is off https://blog.netspi.com/hacking-with-jsp-shells/ which seemed to work and matched a metasploit exploit JSP reverse shell used for HTB Arctic (Coldfusion 8 file upload).
 You need to copy the text here into the body of an HTTP request to an HTTP server that accepts upload of JSP POST data.
 You have to change the IP and port in the line that begins with 'Socket socket' near the bottom.
+I believe that you can also generate the follwoing payload using using MSF Venom payload java/jsp_shell_reverse_tcp but you're format has to be 'raw' for it to work.
 You may also have to have the following preceding this information (what was needed for this POST of data to work for HTB Arctic).  The "newfile" and "crew.txt" may or may not be needed...
 POST .....
 Header_stuff.....
