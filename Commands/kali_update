@@ -14,6 +14,10 @@ then
 	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
 	apt-get autoclean -y -v > /dev/null && apt-get clean -y -v > /dev/null
 	echo -e "${GREEN}Kali is now clean and updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating local Searchsploit directory. Please wait."
+	searchsploit --update
+	echo -e "${GREEN}Local Searchsploit directory updated.\n"
 
 	echo -e "${YELLOW}[+] Clearing Local Ops Git. Please wait."
 	cd /root
