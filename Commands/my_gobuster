@@ -3,5 +3,5 @@ if [ $# -eq 0 ]; then
     echo "Usage: gobuster [target IP] [extensions: txt,html,php,asp,aspx,jsp]"
     exit 1
 fi
-echo "gobuster dir -u http://$1 -w "/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt" -o "gobuster_$1.txt" -a "Mozilla/5.0 \(X11\; Linux x86_64\; rv:60.0\) Gecko/20100101 Firefox/60.0" -e -k -l -s "200,204,301,302,307,401,403" -x "$2"";
-echo "gobuster dir -u http://$1 -w "/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt" -o "gobuster_$1.txt" -a "Mozilla/5.0 \(X11\; Linux x86_64\; rv:60.0\) Gecko/20100101 Firefox/60.0" -e -k -l -s "200,204,301,302,307,401,403" -x "$2"" | clip;
+echo "gobuster dir -u http://$1 -w \"/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt\" -o \"gobuster_$1.txt\" -a \"Mozilla/5.0 \(X11\; Linux x86_64\; rv:60.0\) Gecko/20100101 Firefox/60.0\" -e -k -l -s \"200,204,301,302,307,401,403\" -x \"$2\"";
+echo "gobuster dir -u http://$1 -w \"/usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt\" -o \"gobuster_$1.txt\" -a \"Mozilla/5.0 \(X11\; Linux x86_64\; rv:60.0\) Gecko/20100101 Firefox/60.0\" -e -k -l -s \"200,204,301,302,307,401,403\" -x \"$2\"" | clip;
