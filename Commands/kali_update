@@ -42,6 +42,13 @@ then
 	git clone https://github.com/Tib3rius/AutoRecon.git
 	chmod 755 AutoRecon -R
 	echo -e "${GREEN}AutoRecon Updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating Droopescan. Please wait."
+	cd /root/Ops/Tools
+	rm -rf droopescan
+	git clone https://github.com/droope/droopescan.git
+	chmod 755 droopescan -R
+	echo -e "${GREEN}Droopescan Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
 	cd /root/Ops/Tools
