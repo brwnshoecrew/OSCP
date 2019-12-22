@@ -26,6 +26,10 @@ then
 	chmod 755 Ops -R
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
+	echo -e "${YELLOW}[+] Updating local PATH variable. Please wait."
+	export PATH=$PATH:/root/Ops/Commands
+	echo -e "${GREEN}Local PATH variable updated.\n"
+	
 	echo -e "${YELLOW}[+] Moving TMUX Config File. Please wait."
 	cd /root
 	cp /root/Ops/Tools/.tmux.conf .
