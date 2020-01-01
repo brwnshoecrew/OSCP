@@ -103,6 +103,7 @@ then
 	echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
 	cd /root/Ops/Tools
 	apt install rlwrap
+	apt autoremove
 	echo -e "${GREEN}rlwrap installed.\n"
 
 	echo -e "${BLUE}Exiting.\n"
