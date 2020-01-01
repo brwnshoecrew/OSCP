@@ -99,6 +99,11 @@ then
 	wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
 	chmod 755 Invoke-PowerShellTcp.ps1
 	echo -e "${GREEN}Nishang Powershell TCP Updated.\n"
+	
+	echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
+	cd /root/Ops/Tools
+	apt install rlwrap
+	echo -e "${GREEN}rlwrap installed.\n"
 
 	echo -e "${BLUE}Exiting.\n"
 else
