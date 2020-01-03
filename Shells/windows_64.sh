@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -eq 0 ]; then
-    echo "Usage: windows_32 [reverse port] [format]"
+    echo "Usage: bash windows_64.sh [reverse port] [format]"
     exit 1
 fi
 IP=$( IP_No_Clip );                      
