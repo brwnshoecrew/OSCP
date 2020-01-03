@@ -94,6 +94,18 @@ then
 	echo "Find-AllVulns" >> Sherlock.ps1
 	echo -e "${GREEN}Sherlock Updated.\n"
 	
+	echo -e "${YELLOW}[+] Updating WinEnum.bat. Please wait."
+	cd /root/Ops/Tools
+	wget https://raw.githubusercontent.com/absolomb/Pentesting/master/scripts/winenum.bat
+	chmod 755 winenum.bat
+	echo -e "${GREEN}WinEnum Updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating WindowsEnum.ps1. Please wait."
+	cd /root/Ops/Tools
+	wget https://raw.githubusercontent.com/absolomb/WindowsEnum/master/WindowsEnum.ps1
+	chmod 755 WindowsEnum.ps1
+	echo -e "${GREEN}WindowsEnum.ps1 Updated.\n"
+	
 	echo -e "${YELLOW}[+] Updating Nishang Powershell TCP. Please wait."
 	cd /root/Ops/Tools
 	wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
