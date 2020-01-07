@@ -82,7 +82,7 @@ then
 	
 	echo -e "${YELLOW}[+] Updating PowerUp. Please wait."
 	cd /root/Ops/Tools
-	wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1
+	wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Privesc/PowerUp.ps1
 	chmod 755 PowerUp.ps1
 	echo -e "${GREEN}PowerUp Updated.\n"
 	
