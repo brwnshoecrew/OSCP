@@ -112,6 +112,12 @@ then
 	chmod 755 Invoke-PowerShellTcp.ps1
 	echo -e "${GREEN}Nishang Powershell TCP Updated.\n"
 	
+	echo -e "${YELLOW}[+] Updating TENNC Shell Repo. Please wait."
+	cd /root/Ops/Shells
+	git clone https://github.com/tennc/webshell.git
+	chmod 755 webshell -R
+	echo -e "${GREEN}TENNC Shell Repo Updated.\n"
+	
 	echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
 	cd /root/Ops/Tools
 	apt install rlwrap
