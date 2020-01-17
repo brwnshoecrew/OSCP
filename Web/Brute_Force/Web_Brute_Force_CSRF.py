@@ -54,14 +54,15 @@ for Login_Combo in up_file:
                 token = result.get('value')
             auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
             login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1], args.token_name_var: token}
-            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie, allow_redirects=True)
         else:
-            auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(csrf_response.cookies)[args.session_id_var]}
+            session_id_response = requests.get(args.URL_var)    
+	    auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(session_id_response.cookies)[args.session_id_var]}
             login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]}
-            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie)
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie, allow_redirects=True)
     else:
             login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]}
-            r = s.post(args.URL_var, data=login_parameter_values, verify=False)
+            r = s.post(args.URL_var, data=login_parameter_values, verify=False, allow_redirects=True)
     
     #After making the POST request with a username and password combination, scrap the HTTP response packet to identify if the keyword for failed logins is present or not.
     if args.keyword_var in r.text: 
