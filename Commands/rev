@@ -1,0 +1,11 @@
+#!/bin/bash
+source /root/Ops/Commands/colors.sh
+if [ $# -eq 0 ]; then
+  echo "Usage:"
+  echo "rev [reverse port]"
+  exit 1
+fi
+
+echo -e "${CYAN}Opening reverse shell on port $2.";
+
+nc -lvnp $2;
