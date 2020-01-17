@@ -57,7 +57,7 @@ for Login_Combo in up_file:
             r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie, allow_redirects=True)
         else:
             session_id_response = requests.get(args.URL_var)    
-	    auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(session_id_response.cookies)[args.session_id_var]}
+            auth_cookie = {args.session_id_var: requests.utils.dict_from_cookiejar(session_id_response.cookies)[args.session_id_var]}
             login_parameter_values = {args.user_param_var: File_User, args.pass_param_var: File_Password[:-1]}
             r = s.post(args.URL_var, data=login_parameter_values, verify=False, cookies=auth_cookie, allow_redirects=True)
     else:
