@@ -6,6 +6,6 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-echo -e "${CYAN}Opening reverse shell on port $2.";
+echo -e "${CYAN}Opening reverse shell on port $1.";
 
-nc -lvnp $2;
+nc -lvnp $1;
