@@ -27,10 +27,7 @@ then
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
 	echo -e "${YELLOW}[+] Updating local PATH variable. Please wait."
-	rm ~/.bash_profile
-	touch ~/.bash_profile
-	echo "export PATH=$PATH:/root/Ops/Commands" >> ~/.bash_profile
-	source ~/.bash_profile
+	echo "PATH=/root/Ops/Commands:$PATH" >> ~/.profile
 	echo -e "${GREEN}Local PATH variable updated.\n"
 	
 	echo -e "${YELLOW}[+] Moving TMUX Config File. Please wait."
