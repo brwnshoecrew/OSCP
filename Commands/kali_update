@@ -26,20 +26,17 @@ then
 	chmod 755 Ops -R
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
-	echo -e "${YELLOW}[+] Updating local PATH variable. Please wait."
-	echo "PATH=/root/Ops/Commands:$PATH" >> ~/.profile
-	echo -e "${GREEN}Local PATH variable updated.\n"
-	
-	echo -e "${YELLOW}[+] Updating bashrc. Please wait."
-	rm ~/.bashrc
+	echo -e "${YELLOW}[+] Updating bash config files. Please wait."
+	rm ~/.bashrc .bash_profile .profile
 	cp /root/Ops/Tools/.bashrc ~/.bashrc
-	echo -e "${GREEN}Bashrc updated.\n"
+	cp /root/Ops/Tools/.bash_profile ~/.bash_profile
+	cp /root/Ops/Tools/.profile ~/.profile
+	echo -e "${GREEN}Bash config files updated.\n"
 	
-	echo -e "${YELLOW}[+] Moving TMUX Config File. Please wait."
-	cd /root
-	cp /root/Ops/Tools/.tmux.conf .
-	chmod 755 /root/.tmux.conf
-	echo -e "${GREEN}TMUX Config File Moved.\n"
+	echo -e "${YELLOW}[+] Updating TMUX config file. Please wait."
+	rm ~/.tmux.conf
+	cp /root/Ops/Tools/.tmux.conf ~/.tmux.conf
+	echo -e "${GREEN}TMUX config file updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
 	cd /root/Ops/Tools
