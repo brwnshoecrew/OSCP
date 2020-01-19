@@ -30,6 +30,11 @@ then
 	echo "PATH=/root/Ops/Commands:$PATH" >> ~/.profile
 	echo -e "${GREEN}Local PATH variable updated.\n"
 	
+	echo -e "${YELLOW}[+] Updating bashrc. Please wait."
+	rm ~/.bashrc
+	cp /root/Ops/Tools/.bashrc ~/.bashrc
+	echo -e "${GREEN}Bashrc updated.\n"
+	
 	echo -e "${YELLOW}[+] Moving TMUX Config File. Please wait."
 	cd /root
 	cp /root/Ops/Tools/.tmux.conf .
