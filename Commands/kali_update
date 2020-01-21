@@ -22,7 +22,7 @@ then
 	
 	echo -e "${YELLOW}[+] Creating New Local Ops. Please wait."
 	cd /root
-	git clone https://github.com/neogeo56/Ops.git
+	git clone https://github.com/brwnshoecrew/Ops.git
 	chmod 755 Ops -R
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
