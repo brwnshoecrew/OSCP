@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -eq 0 ]; then
-    echo "Usage: Power_Shell_Dwn_Exec [port to download from] [file name to download]"
+    echo "Usage: Power_Shell_Dwn_Exec_Switch [port to download from] [file name to download]"
     exit 1
 fi
 IP=$( IP_No_Clip );                      
