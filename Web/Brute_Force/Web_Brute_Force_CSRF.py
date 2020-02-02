@@ -77,6 +77,7 @@ for Login_Combo in up_file:
         print(Fore.GREEN + "+++++++++++++++++++++Success %s:%s" % (File_User,File_Password[:-1]) + Style.RESET_ALL)
 	#Write same results to outfile.
         out_file.write("+++++++++++++++++++++Success %s:%s\n" % (File_User,File_Password[:-1]))
+	break
 
 #It is good practice to close the files at the end to free up resources      
 up_file.close()
