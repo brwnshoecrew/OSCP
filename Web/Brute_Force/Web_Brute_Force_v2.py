@@ -36,7 +36,7 @@ os.system("mkdir " + args.outdir_var + "; cd " + args.outdir_var + ";")
 #Accessing the username:password text file   
 up_file = open(args.up_file_var,"r")
 #Create / open the output file to hold the results of the command.
-out_file = open("./" + args.outdir_var + "/outdir.txt","w+")
+out_file = open("./" + args.outdir_var + "/results.txt","w+")
 #Create / open the output file for the example of what a response looks like when there is a failed login attempt.
 failure_example_file = open("./" + args.outdir_var + "/failure.txt","w+")
 #Create / open the output file for what the response looks like when there is a successfull login attempt.
@@ -94,8 +94,7 @@ for Login_Combo in up_file:
         print(Fore.GREEN + "+++++++++++++++++++++Success %s:%s" % (File_User,File_Password[:-1]) + Style.RESET_ALL)
 	#Write same results to outfile.
         out_file.write("+++++++++++++++++++++Success %s:%s\n" % (File_User,File_Password[:-1]))
-	success_header = str(r.headers)
-	success_response_code = str(r.status_code)
+	success_header = str(r.headers)success_response_code = str(r.status_code)
 	success_file.write("-------HEADER-------\n\n %s \n\n-------RESPONSE CODE-------\n\n %s \n\n-------BODY-------\n\n %s" % (success_header, success_response_code, r.text))
 	break
 
