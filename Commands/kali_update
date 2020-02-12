@@ -66,8 +66,8 @@ then
 	cd /root/Ops/Tools
 	rm -rf linux-smart-enumeration
 	cd /root/Ops/Post_Exploit
-	git clone https://github.com/diego-treitos/linux-smart-enumeration.git
-	chmod 755 linux-smart-enumeration -R
+	wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
+	chmod 755 lse.sh
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating Spose. Please wait."
