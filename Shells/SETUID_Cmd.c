@@ -9,7 +9,8 @@ int main(int argc, const char * argv[]){
 /*
 Useful to execute commands as other users that are NOT root. because it assumes the effective user ID of a different non-root user.  This is explained in more detail at the end of the Ippsec Jail video.
 On attacker machine before transfer:
-	gcc SETUID_Cmd.c -o SETUID_Cmd
+	64 bit: gcc SETUID_Cmd.c -o SETUID_Cmd
+	32 bit: gcc SETUID_Bash.c -m32 -o SETUID_Bash -----Note you need gcc-multilib installed to do this option.
 	chmod 6755 SETUID_Cmd
     4 (set UID) + 2 (set GID)
 	Chown [UID]:[GID] SETUID_Cmd
