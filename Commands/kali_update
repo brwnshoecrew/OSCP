@@ -51,7 +51,7 @@ then
 	git clone https://github.com/droope/droopescan.git
 	chmod 755 droopescan -R
 	cd droopescan
-	pip install droopescan
+	pip install -r requirements.txt
 	echo -e "${GREEN}Droopescan Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
