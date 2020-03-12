@@ -8,11 +8,11 @@ then
 	echo -e "${GREEN}Internet Up!\n"
 
 	echo -e "${YELLOW}[+] Updating Kali. Please wait."
-	apt-get update -y -v > /dev/null && apt-get upgrade -y -v > /dev/null && apt-get dist-upgrade -y -v > /dev/null
+	apt update -y && apt full-upgrade -y
 	echo -e "${GREEN}Kali is now up to date.\n"
 
 	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
-	apt-get autoclean -y -v > /dev/null && apt-get clean -y -v > /dev/null
+	apt autoclean -y && apt clean -y && apt autoclean -y
 	echo -e "${GREEN}Kali is now clean and updated.\n"
 	
 	echo -e "${YELLOW}[+] Clearing Local Ops Git. Please wait."
