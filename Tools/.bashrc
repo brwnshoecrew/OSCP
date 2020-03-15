@@ -84,10 +84,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# some more aliases
 alias lsa='ls -halt'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias open='xdg-open'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
