@@ -8,6 +8,6 @@ if [ "$#" -ne 2 ]; then
 fi
 
 echo "Executing AutoRecon on $IP."
-mkdir -p /root/Boxes/$2/AutoRecon
-python3 /root/Ops/Tools/AutoRecon/autorecon.py $1 -o /root/Boxes/$2/AutoRecon -vv
+mkdir -p /home/kali/Boxes/$2/AutoRecon
+python3 /home/kali/Ops/Tools/AutoRecon/autorecon.py $1 -o /root/Boxes/$2/AutoRecon -vv
 
