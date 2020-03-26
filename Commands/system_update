@@ -1,0 +1,22 @@
+#!/bin/bash
+source /home/kali/Ops/Commands/colors.sh
+clear
+# progress bar function
+echo -e "${BLUE}Kali Linux Update Script\n"
+if ping -c 1 -W 20 8.8.8.8 1> /dev/null 2> /dev/null
+then
+	echo -e "${GREEN}Internet Up!\n"
+
+	echo -e "${YELLOW}[+] Updating Kali. Please wait."
+	sudo apt update -y && sudo apt full-upgrade -y
+	echo -e "${GREEN}Kali is now up to date.\n"
+
+	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
+	sudo apt autoclean -y && sudo apt clean -y
+	echo -e "${GREEN}Kali is now clean and updated.\n"
+  
+  echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
+	cd /home/kali/Ops/Tools
+	apt install rlwrap
+	apt autoremove
+	echo -e "${GREEN}rlwrap installed.\n"
