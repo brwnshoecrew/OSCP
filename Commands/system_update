@@ -20,3 +20,9 @@ then
 	apt install rlwrap
 	apt autoremove
 	echo -e "${GREEN}rlwrap installed.\n"
+	
+	echo -e "${BLUE}Exiting.\n"
+else
+	echo -e "${RED}Internet Down...Exiting"
+fi
+exit
