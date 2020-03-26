@@ -1,2 +1,2 @@
 source "$HOME/.bashrc"
-PATH=$PATH:/root/Ops/Commands
+PATH=$PATH:/home/kali/Ops/Commands
