@@ -1,10 +1,11 @@
-1. Download the latest jar file
-2. Navigate to /usr/bin and rename burpsuite to burpsuite(old):
+1. Download the latest .sh file from their Community Edition download page.
+2. Run the .sh script to generate the jar file.
+3. Navigate to /usr/bin and rename burpsuite to burpsuite(old):
       mv burpsuite burpsuite_old
-3. Copy the jar that was just downloaded into /usr/bin
+4. Copy the jar that was just downloaded into /usr/bin
         cp /root/Downloads/burpsuite_community_v1.7.32.jar /usr/bin/
-4. Rename the jar to burpsuite.
+5. Rename the jar to burpsuite.
         mv burpsuite_community_v1.7.32.jar burpsuite
-5. Allow executing file as program.
+6. Allow executing file as program.
         chmod +x burpsuite
-6. Launch successfully , you can delete burpsuite(old) from /usr/bin.
+7. Launch successfully , you can delete burpsuite(old) from /usr/bin.
