@@ -1,2 +1,2 @@
 #!/bin/bash
-python /root/Ops/Tools/smbserver.py brwn .
+python /home/kali/Ops/Tools/smbserver.py brwn .
