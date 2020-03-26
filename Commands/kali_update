@@ -1,5 +1,5 @@
 #!/bin/bash
-source /kali/Ops/Commands/colors.sh
+source /home/kali/Ops/Commands/colors.sh
 clear
 # progress bar function
 echo -e "${BLUE}Kali Linux Update Script\n"
@@ -28,25 +28,25 @@ then
 	
 	echo -e "${YELLOW}[+] Updating bash config files. Please wait."
 	rm /home/kali/.bashrc .bash_profile .profile
-	cp /kali/Ops/Tools/.bashrc /home/kali/.bashrc
-	cp /kali/Ops/Tools/.bash_profile /home/kali/.bash_profile
-	cp /kali/Ops/Tools/.profile /home/kali/.profile
+	cp /home/kali/Ops/Tools/.bashrc /home/kali/.bashrc
+	cp /home/kali/Ops/Tools/.bash_profile /home/kali/.bash_profile
+	cp /home/kali/Ops/Tools/.profile /home/kali/.profile
 	echo -e "${GREEN}Bash config files updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating TMUX config file. Please wait."
 	rm /home/kali/.tmux.conf
-	cp /kali/Ops/Tools/.tmux.conf /home/kali/.tmux.conf
+	cp /home/kali/Ops/Tools/.tmux.conf /home/kali/.tmux.conf
 	echo -e "${GREEN}TMUX config file updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	rm -rf AutoRecon
 	git clone https://github.com/Tib3rius/AutoRecon.git
 	chmod 755 AutoRecon -R
 	echo -e "${GREEN}AutoRecon Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating Droopescan. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	rm -rf droopescan
 	git clone https://github.com/droope/droopescan.git
 	chmod 755 droopescan -R
@@ -55,41 +55,41 @@ then
 	echo -e "${GREEN}Droopescan Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating LinEnum. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	rm -rf LinEnum
-	cd /kali/Ops/Post_Exploit
+	cd /home/kali/Ops/Post_Exploit
 	git clone https://github.com/rebootuser/LinEnum.git
 	chmod 755 LinEnum -R
 	echo -e "${GREEN}LinEnum Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating Linux-Smart-Enumeration. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	rm -rf linux-smart-enumeration
-	cd /kali/Ops/Post_Exploit
+	cd /home/kali/Ops/Post_Exploit
 	wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
 	chmod 755 lse.sh
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating Spose. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	git clone https://github.com/aancw/spose.git
 	chmod 755 spose -R
 	echo -e "${GREEN}Spose Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating JAWS. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	git clone https://github.com/411Hall/JAWS.git
 	chmod 755 JAWS -R
 	echo -e "${GREEN}JAWS Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating PowerUp. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Privesc/PowerUp.ps1
 	chmod 755 PowerUp.ps1
 	echo -e "${GREEN}PowerUp Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating Sherlock. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/rasta-mouse/Sherlock/master/Sherlock.ps1
 	chmod 755 Sherlock.ps1
 	echo "" >> Sherlock.ps1
@@ -97,31 +97,31 @@ then
 	echo -e "${GREEN}Sherlock Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating WinEnum.bat. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/absolomb/Pentesting/master/scripts/winenum.bat
 	chmod 755 winenum.bat
 	echo -e "${GREEN}WinEnum Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating WindowsEnum.ps1. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/absolomb/WindowsEnum/master/WindowsEnum.ps1
 	chmod 755 WindowsEnum.ps1
 	echo -e "${GREEN}WindowsEnum.ps1 Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating Nishang Powershell TCP. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
 	chmod 755 Invoke-PowerShellTcp.ps1
 	echo -e "${GREEN}Nishang Powershell TCP Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating TENNC Shell Repo. Please wait."
-	cd /kali/Ops/Shells
+	cd /home/kali/Ops/Shells
 	git clone https://github.com/tennc/webshell.git
 	chmod 755 webshell -R
 	echo -e "${GREEN}TENNC Shell Repo Updated.\n"
 	
 	echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
-	cd /kali/Ops/Tools
+	cd /home/kali/Ops/Tools
 	apt install rlwrap
 	apt autoremove
 	echo -e "${GREEN}rlwrap installed.\n"
