@@ -27,15 +27,15 @@ then
 	echo -e "${GREEN}New Local Ops Created.\n"
 	
 	echo -e "${YELLOW}[+] Updating bash config files. Please wait."
-	rm ~/.bashrc .bash_profile .profile
-	cp /kali/Ops/Tools/.bashrc ~/.bashrc
-	cp /kali/Ops/Tools/.bash_profile ~/.bash_profile
-	cp /kali/Ops/Tools/.profile ~/.profile
+	rm /home/kali/.bashrc .bash_profile .profile
+	cp /kali/Ops/Tools/.bashrc /home/kali/.bashrc
+	cp /kali/Ops/Tools/.bash_profile /home/kali/.bash_profile
+	cp /kali/Ops/Tools/.profile /home/kali/.profile
 	echo -e "${GREEN}Bash config files updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating TMUX config file. Please wait."
-	rm ~/.tmux.conf
-	cp /kali/Ops/Tools/.tmux.conf ~/.tmux.conf
+	rm /home/kali/.tmux.conf
+	cp /kali/Ops/Tools/.tmux.conf /home/kali/.tmux.conf
 	echo -e "${GREEN}TMUX config file updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating AutoRecon. Please wait."
