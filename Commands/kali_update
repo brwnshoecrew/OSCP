@@ -16,12 +16,12 @@ then
 	echo -e "${GREEN}Kali is now clean and updated.\n"
 	
 	echo -e "${YELLOW}[+] Clearing Local Ops Git. Please wait."
-	cd /kali
+	cd /home/kali
 	rm -rf Ops
 	echo -e "${GREEN}Local Ops Git Cleared.\n"	
 	
 	echo -e "${YELLOW}[+] Creating New Local Ops. Please wait."
-	cd /kali
+	cd /home/kali
 	git clone https://github.com/brwnshoecrew/Ops.git
 	chmod 755 Ops -R
 	echo -e "${GREEN}New Local Ops Created.\n"
