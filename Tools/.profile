@@ -7,4 +7,4 @@ if [ "$BASH" ]; then
 fi
 
 mesg n || true
-PATH=/root/Ops/Commands:$PATH
+PATH=/home/kali/Ops/Commands:$PATH
