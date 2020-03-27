@@ -12,7 +12,7 @@ then
 	echo -e "${GREEN}Kali is now up to date.\n"
 
 	echo -e "${YELLOW}[+] Cleaning Kali. Please wait."
-	sudo apt autoclean -y && sudo apt clean -y
+	sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y
 	echo -e "${GREEN}Kali is now clean and updated.\n"
   
   echo -e "${YELLOW}[+] Installing rlwrap. Please wait."
