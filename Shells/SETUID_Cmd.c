@@ -16,4 +16,6 @@ On attacker machine before transfer:
 	Chown [UID]:[GID] SETUID_Cmd
 		- Or whatever UID:GID we elevate to.
   ./SETUID_Cmd [command we want to execute as the effective UID GID that we changed the owner to]
+  - We can also create a file as the UID and GID that we assigned as owner of the SETUID_Cmd binary by:
+  echo "TEST" | ./SETUID_Cmd tee /file/location/to/create/file
 */
