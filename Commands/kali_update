@@ -61,6 +61,26 @@ then
 	wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
 	chmod 755 lse.sh
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating WinPEAS. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf winPEASany.exe winPEASx64.exe winPEASx86.exe
+	cd /home/kali/Ops/Post_Exploit
+	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASany.exe
+	chmod 755 winPEASany.exe
+	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx64.exe
+	chmod 755 winPEASx64.exe
+	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx86.exe
+	chmod 755 winPEASx86.exe
+	echo -e "${GREEN}WinPEAS Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating LinPEAS. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf linpeas.sh
+	cd /home/kali/Ops/Post_Exploit
+	wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
+	chmod 755 linpeas.sh
+	echo -e "${GREEN}LinPEAS Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating Spose. Please wait."
 	cd /home/kali/Ops/Tools
