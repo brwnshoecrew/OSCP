@@ -5,8 +5,8 @@
 import socket, time, sys
 
 # CHANGE THESE!!!
-target_IP = 1.1.1.1
-target_port = XXXX
+target_IP = [IP]
+target_port = [port]
 
 # Start with a fuzzing input size of 100 A's.
 size = 100
