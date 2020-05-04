@@ -5,7 +5,7 @@
 import socket, time, sys
 
 # CHANGE THESE!!!
-target_IP = [IP]
+target_IP = '[IP]'
 target_port = [port]
 
 # Start with a fuzzing input size of 100 A's.
