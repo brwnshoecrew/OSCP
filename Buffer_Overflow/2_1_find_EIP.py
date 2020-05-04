@@ -4,7 +4,7 @@
 import socket, sys
 
 # CHANGE THESE!!!
-target_IP = [IP]
+target_IP = '[IP]'
 target_port = [port]
 ## Enter in the msf-pattern_create string.
 input_msf_pattern = [msf-patter_create string]
