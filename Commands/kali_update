@@ -98,6 +98,7 @@ then
 	cd /home/kali/Ops/Tools
 	wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Privesc/PowerUp.ps1
 	chmod 755 PowerUp.ps1
+	echo "Invoke-AllChecks" >> PowerUp.ps1
 	echo -e "${GREEN}PowerUp Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating Sherlock. Please wait."
@@ -107,6 +108,12 @@ then
 	echo "" >> Sherlock.ps1
 	echo "Find-AllVulns" >> Sherlock.ps1
 	echo -e "${GREEN}Sherlock Updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating Evil-Winrm. Please wait."
+	cd /home/kali/Ops/Tools
+	sudo gem install winrm winrm-fs stringio
+	git clone https://github.com/Hackplayers/evil-winrm.git
+	echo -e "${GREEN}Evil-Winrm Updated.\n"
 	
 	echo -e "${YELLOW}[+] Updating WinEnum.bat. Please wait."
 	cd /home/kali/Ops/Tools
