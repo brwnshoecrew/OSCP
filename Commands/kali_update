@@ -127,12 +127,6 @@ then
 	chmod 755 WindowsEnum.ps1
 	echo -e "${GREEN}WindowsEnum.ps1 Updated.\n"
 	
-	echo -e "${YELLOW}[+] Updating Nishang Powershell TCP. Please wait."
-	cd /home/kali/Ops/Tools
-	wget https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1
-	chmod 755 Invoke-PowerShellTcp.ps1
-	echo -e "${GREEN}Nishang Powershell TCP Updated.\n"
-	
 	echo -e "${YELLOW}[+] Updating TENNC Shell Repo. Please wait."
 	cd /home/kali/Ops/Shells
 	git clone https://github.com/tennc/webshell.git
