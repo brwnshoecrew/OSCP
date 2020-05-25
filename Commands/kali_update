@@ -111,7 +111,7 @@ then
 	
 	echo -e "${YELLOW}[+] Updating Evil-Winrm. Please wait."
 	cd /home/kali/Ops/Tools
-	if test -f "/var/lib/gems/2.5.0/gems/winrm-fs-1.3.4/lib/winrm-fs"; then
+	if test -f "/var/lib/gems/2.5.0/gems/winrm-fs-1.3.4/lib/winrm-fs/file_manager.rb"; then
 		echo "${YELLOW}Evil-Winrm Gems Already Installed. Just cloning the git.\n"
 		git clone https://github.com/Hackplayers/evil-winrm.git
 		echo -e "${GREEN}Evil-Winrm Updated.\n"
