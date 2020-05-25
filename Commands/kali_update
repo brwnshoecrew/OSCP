@@ -111,9 +111,13 @@ then
 	
 	echo -e "${YELLOW}[+] Updating Evil-Winrm. Please wait."
 	cd /home/kali/Ops/Tools
-	sudo gem install winrm winrm-fs stringio
-	git clone https://github.com/Hackplayers/evil-winrm.git
-	echo -e "${GREEN}Evil-Winrm Updated.\n"
+	if test -f "/home/kali/Ops/Tools/evil-winrm/evil-winrm.rb"; then
+		echo "${GREEN}Evil-Winrm Already Exists.\n"
+	else
+		sudo gem install winrm winrm-fs stringio
+		git clone https://github.com/Hackplayers/evil-winrm.git
+		echo -e "${GREEN}Evil-Winrm Updated.\n"
+	fi
 	
 	echo -e "${YELLOW}[+] Updating WinEnum.bat. Please wait."
 	cd /home/kali/Ops/Tools
