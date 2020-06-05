@@ -1,4 +1,4 @@
-function brwn-shoe-crew-n1$hang
+function brwn-shoe-crew-n1shang
 {    
     [CmdletBinding(DefaultParameterSetName="reverse")] Param(
 
