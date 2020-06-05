@@ -6,7 +6,7 @@ col=$( echo $host | awk '{print NF}')
 while [[ $col -ge 1 ]]
 do
 	result=$( echo $host | awk -F ' ' '{print $'"$col"' }' )
-	if [[ $result == *"10.10.14"* ]]; then
+	if [[ $result == *"192.168.119"* ]]; then
 		echo $result
 		found="yes"
 		echo -n $result | clip;
