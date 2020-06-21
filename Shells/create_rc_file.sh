@@ -11,7 +11,8 @@ use exploit/multi/handler
 set payload $1
 set LHOST $New_IP
 set LPORT $2
-exploit -j
+ExitOnSession false
+exploit -j -z
 " > reverse_$2.rc
 
 echo "
