@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 /home/kali/Ops/Tools/smbserver.py brwn .
+python3 /usr/share/doc/python3-impacket/examples/smbserver.py brwn .
