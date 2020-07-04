@@ -61,17 +61,65 @@ then
 	wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
 	chmod 755 lse.sh
 	echo -e "${GREEN}Linux-Smart-Enumeration Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating Watson. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf Watson/
+	mkdir Watson/
+	cd Watson/
+	wget -O Watson_4_0_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x64/Watson.exe
+	wget -O Watson_4_0_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x86/Watson.exe
+	wget -O Watson_4_5_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x64/Watson.exe
+	wget -O Watson_4_5_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x86/Watson.exe
+	chmod 755 *
+	echo -e "${GREEN}Watson Updated.\n"
+
+	echo -e "${YELLOW}[+] Updating Seatbelt. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf Seatbelt/
+	mkdir Seatbelt/
+	cd Seatbelt/
+	wget -O Seatbelt_4_0_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x64/Seatbelt.exe
+	wget -O Seatbelt_4_0_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x86/Seatbelt.exe
+	wget -O Seatbelt_4_5_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x64/Seatbelt.exe
+	wget -O Seatbelt_4_5_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x86/Seatbelt.exe
+	chmod 755 *
+	echo -e "${GREEN}Seatbelt Updated.\n"
 	
+	echo -e "${YELLOW}[+] Updating BetterSafetyKatz. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf BetterSafetyKatz/
+	mkdir BetterSafetyKatz/
+	cd BetterSafetyKatz/
+	wget -O BetterSafetyKatz_4_0_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x64/BetterSafetyKatz.exe
+	wget -O BetterSafetyKatz_4_0_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x86/BetterSafetyKatz.exe
+	wget -O BetterSafetyKatz_4_5_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x64/BetterSafetyKatz.exe
+	wget -O BetterSafetyKatz_4_5_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x86/BetterSafetyKatz.exe
+	chmod 755 *
+	echo -e "${GREEN}BetterSafetyKatz Updated.\n"
+	
+	echo -e "${YELLOW}[+] Updating SharUp. Please wait."
+	cd /home/kali/Ops/Post_Exploit
+	rm -rf SharpUp/
+	mkdir SharpUp/
+	cd SharpUp/
+	wget -O SharpUp_4_0_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x64/SharpUp.exe
+	wget -O SharpUp_4_0_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x86/SharpUp.exe
+	wget -O SharpUp_4_5_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x64/SharpUp.exe
+	wget -O SharpUp_4_5_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x86/SharpUp.exe
+	chmod 755 *
+	echo -e "${GREEN}SharpUp Updated.\n"
+
 	echo -e "${YELLOW}[+] Updating WinPEAS. Please wait."
 	cd /home/kali/Ops/Post_Exploit
-	rm -rf winPEASany.exe winPEASx64.exe winPEASx86.exe
-	cd /home/kali/Ops/Post_Exploit
-	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASany.exe
-	chmod 755 winPEASany.exe
-	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx64.exe
-	chmod 755 winPEASx64.exe
-	wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx86.exe
-	chmod 755 winPEASx86.exe
+	rm -rf winPEAS/
+	mkdir winPEAS/
+	cd winPEAS/
+	wget -O winPEAS_4_0_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x64/winPEAS.exe
+	wget -O winPEAS_4_0_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.0_x86/winPEAS.exe
+	wget -O winPEAS_4_5_x64.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x64/winPEAS.exe
+	wget -O winPEAS_4_5_x86.exe https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_x86/winPEAS.exe
+	chmod 755 *
 	echo -e "${GREEN}WinPEAS Updated.\n"
 
 	echo -e "${YELLOW}[+] Updating LinPEAS. Please wait."
