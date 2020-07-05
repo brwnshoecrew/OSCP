@@ -189,13 +189,6 @@ then
 	chmod 755 webshell -R
 	echo -e "${GREEN}TENNC Shell Repo Updated.\n"
 	
-	echo -e "${YELLOW}[+] Updating Impacket. Please wait."
-	cd /home/kali/Ops/Tools
-	git clone https://github.com/SecureAuthCorp/impacket.git
-	pip3 install .
-	chmod 755 impacket -R
-	echo -e "${GREEN}Impacket Repo Updated.\n"
-
 	echo -e "${BLUE}Exiting.\n"
 else
 	echo -e "${RED}Internet Down...Exiting"
